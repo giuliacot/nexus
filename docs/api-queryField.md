@@ -9,6 +9,7 @@ Often times you want to split up query fields into different domains of your app
 ```ts
 export const usersQueryField = queryField("users", {
   type: SomeType,
+  args: { id: stringArg() },
   resolve() {
     // ...
   },
